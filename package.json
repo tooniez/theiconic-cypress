@@ -1,0 +1,21 @@
+{
+  "name": "theiconic-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "ci": "npm run test:chrome && npm run test:firefox && npm run test:edge",
+    "test:chrome": "cypress run --browser chrome --headless",
+    "test:firefox": "cypress run --browser firefox --headless",
+    "test:edge": "cypress run --browser edge --headless",
+    "cypress:debug": "DEBUG=cypress:* cypress run --browser chrome --headless"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.1"
+  }
+}
